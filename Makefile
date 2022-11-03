@@ -25,7 +25,7 @@ static:
 
 # treat click special since we want multi-proc compiles
 click:
-	make -j$(NPROCS) -C $@
+	make -j4 -C $@
 
 $(filter-out click, $(MAKEDIRS)):
 	make -C $@ $(STATIC)
